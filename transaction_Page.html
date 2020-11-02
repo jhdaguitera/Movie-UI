@@ -19,16 +19,29 @@
             <a class="active" href="transaction_Page.html ">Cart</a>
         </div>
         <h2>Checkout</h2>
-        <p>This will show autopopulate with the amount of tickets/type of tickets for the showtime selected. <br>
-            We will also have a update/delete button so they can change what is in their cart. This will display the <br>
-            of the tickets and ask for an email where a confirmation email can be sent.      
+        <p>This will auto-populate with the amount of tickets/type of tickets for the showtime selected. <br>
+            We will also have a update/delete button so they can change what is in their cart. The page will ask for <br>
+            the customer information so that an email confirmation can be sent.      
         </p>
         <br>
         <h4><bold>***CUSTOMER TICKET PURCHASE INFORMATION WILL GO HERE***</bold></h4>
+        <h4>It will display the movie, time, ticket breakdown and cost. This can change if updated.</h4>
+        <form action="#">
+            <label for="fname">Adult Tickets</label><input type="text" id="fname" name="fname" value="0">
+            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
+            <label for="fname">Senior Tickets</label><input type="text" id="fname" name="fname" value="0">
+            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
+            <label for="fname">Children Tickets</label><input type="text" id="fname" name="fname" value="0">
+            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
+
+          </form>
+
+          <br>
+          <br>
 
         <form action="#">
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="""><br>
+            <input type="text" id="fname" name="fname" value=""><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" value=""><br>
             <label for="email">Email:</label><br>

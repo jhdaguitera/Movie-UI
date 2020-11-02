@@ -21,8 +21,9 @@
         <h2>Purchase Tickets</h2>
 
 
-        <p>This will allow the user to add the tickets to their cart. Ideally, we will have the fields cascade and only <br>
-            be selectable once the previous field is selected. This should also add them to the cart. 
+        <p>This will allow the user to add between 0(Null) and 10 tickets per category. Ideally, we will have the fields cascade and only <br>
+            be selectable once the previous field is selected. This will enable us to only display the current available<br>
+             options for each movie. This page will also add them to the cart. 
             
         </p>
         <form action="#">
@@ -64,8 +65,9 @@
             <br>
 
             <form action="#">
-            <label for="adults">How Many Adults? (Over 18, up to 10 tickets)</label>
+            <label for="adults">How Many Adults? (Over 18, 0 - 10 tickets)</label>
             <select name="adults" id="adults">
+              <option value="a_zero">0</option>
               <option value="a_one">1</option>
               <option value="a_two">2</option>
               <option value="a_three">3</option>
@@ -82,8 +84,9 @@
             <br>
 
             <form action="#">
-            <label for="children">How Many Children? (Under 18, up to 10 tickets)</label>
+            <label for="children">How Many Children? (Under 18, 0 - 10 tickets)</label>
             <select name="children" id="children">
+              <option value="c_zero">0</option>
               <option value="c_one">1</option>
               <option value="c_two">2</option>
               <option value="c_three">3</option>
@@ -100,8 +103,9 @@
             <br>
 
             <form action="#">
-            <label for="seniors">How Many Seniors? (Over 65, up to 10 tickets)</label>
+            <label for="seniors">How Many Seniors? (Over 65, 0 - 10 tickets)</label>
             <select name="seniors" id="seniors">
+              <option value="s_zero">0</option>
               <option value="s_one">1</option>
               <option value="s_two">2</option>
               <option value="s_three">3</option>
