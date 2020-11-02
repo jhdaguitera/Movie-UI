@@ -4,21 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" type = "text/css">
     <title>Home Page</title>
 </head>
 
 <body>
-    <h1>Welcome to Homepage!</h1>
+    <h1>WestCoast Dev Theater</h1>
     <div class="topMenu">
         <a class="active" href="index.html">Home</a>
-        <a href="sale_Page.html">Buy Movie Tickets</a>
-        <a href="search_Page.html ">Search for Movie</a>
-        <a href="guest_Page.html ">Guest Profile</a>
+        <a href="search_Page.html ">Search Movies</a>
+        <a href="sale_Page.html">Purchase Tickets</a>
+        <!--- <a href="guest_Page.html ">Guest Profile</a> --->
         <a href="transaction_Page.html ">Cart</a>
     </div>
     <br/>
-    <script src=""></script>
+
+<p>This will show a carousel of the current movies we are showing at the theater. We will also show upcoming<br>
+    movies and maybe some other things. 
+            
+        </p>
+
+    <div id="slide">
+    <div class="slideshowCarousel">
+      <div class="carouselSlides"> <img src="reservoirdogs.jpg" style="width:100%"> 
+      <cite>ReservoirDogs</cite></div>
+      <div class="carouselSlides"> <img src="it_movie.jpeg" style="width:100%"> 
+      <cite>IT</cite></div>
+      <div class="carouselSlides"> <img src="/nfs/stak/users/bachichi/public_html/cs340/images/Anchorman_movie.jpg" style="width:100%"> 
+      <cite>Anchorman</cite></div>
+      <a class="back" onclick="carouselPos(-1)"> <</a> <a class="forward" onclick="carouselPos(1)"> > </a> </div>
+    <br>
+     </div>
+
+
+
+
+    <script src="java.js"></script>
 </body>
 
 </html>

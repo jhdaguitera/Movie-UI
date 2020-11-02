@@ -4,20 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Tickets</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>Buy Tickets</title>
 </head>
 
 <body>
-    <h1>Buy Tickets!</h1>
-    <div class="topMenu">
-        <a href="index.html">Home</a>
-        <a class="active" href="sale_Page.html">Buy Movie Tickets</a>
-        <a href="search_Page.html ">Search for Movie</a>
-        <a href="guest_Page.html ">Guest Profile</a>
-        <a href="transaction_Page.html ">Cart</a>
-    </div>
-    <br/>
+    <body>
+        <h1>WestCoast Dev Theater</h1>
+        <div class="topMenu">
+            <a href="index.html">Home</a>
+            <a href="search_Page.html ">Search Movies</a>
+            <a class="active" href="sale_Page.html">Purchase Tickets</a>
+            <!--- <a href="guest_Page.html ">Guest Profile</a> --->
+            <a href="transaction_Page.html ">Cart</a>
+        </div>
+        <h2>Purchase Tickets</h2>
+
+
+        <p>This will allow the user to add the tickets to their cart. Ideally, we will have the fields cascade and only <br>
+            be selectable once the previous field is selected. This should also add them to the cart. 
+            
+        </p>
+        <form action="#">
+            <label for="times">Choose Day</label>
+          
+            <select name="date" id="date">
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              <option value="sunday">Sunday</option>
+            </select> 
+            <br>
+            <br>
+        <form action="#">
+          <label for="times">Choose Time</label>
+          <select name="times" id="times">
+            <option value="twelve">12:00 PM</option>
+            <option value="two_thirty">2:30 PM</option>
+            <option value="five_thirty">5:30 PM</option>
+            <option value="seven_thirty">7:30 PM</option>
+            <option value="ten_thirty">10:30 PM</option>
+          </select> 
+        </form>
+        <br>
+        <form action="#">
+            <label for="movies">Choose Movie</label>
+            <select name="movies" id="movies">
+              <option value="ResevoirDogs">Resevoir Dogs</option>
+              <option value="Apocalypto">Apocalypto</option>
+              <option value="IT">IT</option>
+              <option value="Drive">Drive</option>
+              <option value="Anchorman">Anchorman</option>
+            </select> 
+    
+            <br>
+            <br>
+
+            <form action="#">
+            <label for="adults">How Many Adults? (Over 18, up to 10 tickets)</label>
+            <select name="adults" id="adults">
+              <option value="a_one">1</option>
+              <option value="a_two">2</option>
+              <option value="a_three">3</option>
+              <option value="a_four">4</option>
+              <option value="a_five">5</option>
+              <option value="a_six">6</option>
+              <option value="a_seven">7</option>
+              <option value="a_eight">8</option>
+              <option value="a_nine">9</option>
+              <option value="a_ten">10</option>
+            </select> 
+        
+            <br>
+            <br>
+
+            <form action="#">
+            <label for="children">How Many Children? (Under 18, up to 10 tickets)</label>
+            <select name="children" id="children">
+              <option value="c_one">1</option>
+              <option value="c_two">2</option>
+              <option value="c_three">3</option>
+              <option value="c_four">4</option>
+              <option value="c_five">5</option>
+              <option value="c_six">6</option>
+              <option value="c_seven">7</option>
+              <option value="c_eight">8</option>
+              <option value="c_nine">9</option>
+              <option value="c_ten">10</option>
+            </select> 
+
+            <br>
+            <br>
+
+            <form action="#">
+            <label for="seniors">How Many Seniors? (Over 65, up to 10 tickets)</label>
+            <select name="seniors" id="seniors">
+              <option value="s_one">1</option>
+              <option value="s_two">2</option>
+              <option value="s_three">3</option>
+              <option value="s_four">4</option>
+              <option value="s_five">5</option>
+              <option value="s_six">6</option>
+              <option value="s_seven">7</option>
+              <option value="s_eight">8</option>
+              <option value="s_nine">9</option>
+              <option value="s_ten">10</option>
+            </select> 
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        <p></p>
+
+
+
+        
+    </body>
 
     <script src=""></script>
 
