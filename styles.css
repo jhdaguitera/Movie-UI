@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+div {
+    margin-top: 15px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.section-style {
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: white;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topMenu {
+    background-color: rgb(14, 143, 110);
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topMenu a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* Change the color of links on hover */
+
+.topMenu a:hover {
+    background-color: rgb(245, 241, 14);
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topMenu a.active {
+    background-color: #69f3a7;
+    color: white;
+}
