@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <title>Home Page</title>
+  <title>WCD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles2.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-    <h1 style="font-family:Tahoma">WESTCOAST DEV THEATER</h1>
-    <div class="topMenu">
-        <a class="active" href="index.html">HOME</a>
-        <a href="search_Page.html ">SEARCH</a>
-        <a href="sale_Page.html">PURCHASE</a>
-        <a href="transaction_Page.html ">CART</a>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" style="font-family:Impact" href="#">WDT</a>
     </div>
-    <br/>
-    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">HOME</a></li>
+      <li><a href="search_Page.html ">SEARCH MOVIES</a></li>
+      <li><a href="sale_Page.html">PURCHASE TICKETS</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+       <li> <button type="button" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-shopping-cart"></span> <a href="transaction_Page.html">Shopping Cart</a></button>
+          </button>
+          </li>
+    </ul>
+  </div>
+</nav>   
+
+<h1>WESTCOAST DEV THEATER</h1>
+
+
 <p>This will show a carousel of the current movies we are showing at the theater. We will also show upcoming<br>
     movies and implement other cosmetic design features. (These photos are just stand-ins for now) 
             

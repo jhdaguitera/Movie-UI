@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Movies</title>
-    <link rel="stylesheet" href="styles.css" />
+  <title>WCD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles2.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
-    <h1 style="font-family:Tahoma">WESTCOAST DEV THEATER</h1>
-    <div class="topMenu">
-        <a href="index.html">HOME</a>
-        <a class="active" href="search_Page.html">SEARCH</a>
-        <a href="sale_Page.html">PURCHASE</a>
-        <!--- <a href="guest_Page.html ">Guest Profile</a> --->
-        <a href="transaction_Page.html">CART</a>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" style="font-family:Impact" href="index.html">WDT</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li class="active"><a href="search_Page.html ">SEARCH MOVIES</a></li>
+      <li><a href="sale_Page.html">PURCHASE TICKETS</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+       <li> <button type="button" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-shopping-cart"></span> <a href="transaction_Page.html">Shopping Cart</a></button>
+          </button>
+          </li>
+    </ul>
+  </div>
+</nav>    
+
+
     <h2>Search Movies</h2>
 
     <p>This will allow the user to search movies by first selecting a day, and then selecting a time OR a currently showing movie. <br> We will also have a carousel of images that will show the different movies the theater is currently showing. We are hoping
