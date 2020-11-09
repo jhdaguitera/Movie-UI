@@ -9,25 +9,25 @@
 </head>
 
 <body>
-
     <body>
-        <h1>WestCoast Dev Theater</h1>
+      <h1 style="font-family:Tahoma">WESTCOAST DEV THEATER</h1>
         <div class="topMenu">
-            <a href="index.html">Home</a>
-            <a href="search_Page.html ">Search Movies</a>
-            <a class="active" href="sale_Page.html">Purchase Tickets</a>
-            <!--- <a href="guest_Page.html ">Guest Profile</a> --->
-            <a href="transaction_Page.html ">Cart</a>
+            <a href="index.html">HOME</a>
+            <a href="search_Page.html ">SEARCH</a>
+            <a class="active" href="sale_Page.html">PURCHASE</a>
+            <a href="transaction_Page.html ">CART</a>
         </div>
         <h2>Purchase Tickets</h2>
 
 
-        <p>This will allow the user to add between 0(Null) and 10 tickets per category. Ideally, we will have the fields cascade and only <br> be selectable once the previous field is selected. This will enable us to only display the current available<br>            options for each movie. This page will also add them to the cart.
-
+        <p>This will allow the user to add between 0(Null) and 10 tickets per category. Ideally, we will have the fields cascade and only <br>
+            be selectable once the previous field is selected. This will enable us to only display the current available<br>
+             options for each movie. This page will also add them to the cart. 
+            
         </p>
         <form action="#">
             <label for="times">Choose Day</label>
-
+          
             <select name="date" id="date">
               <option value="monday">Monday</option>
               <option value="tuesday">Tuesday</option>
@@ -36,38 +36,36 @@
               <option value="friday">Friday</option>
               <option value="saturday">Saturday</option>
               <option value="sunday">Sunday</option>
-            </select>
-            <button type="button" onclick="getSelectedDate()">Update</button>
+            </select> 
             <br>
             <br>
-            <form action="#">
-                <label for="times">Choose Time</label>
-                <select name="times" id="times">
+        <form action="#">
+          <label for="times">Choose Time</label>
+          <select name="times" id="times">
             <option value="twelve">12:00 PM</option>
             <option value="two_thirty">2:30 PM</option>
             <option value="five_thirty">5:30 PM</option>
             <option value="seven_thirty">7:30 PM</option>
             <option value="ten_thirty">10:30 PM</option>
-          </select>
-                <button type="button" onclick="getSelectedTime()">Update</button>
-            </form>
-            <br>
-            <form action="#">
-                <label for="movies">Choose Movie</label>
-                <select name="movies" id="movies">
-              <option value="ReservoirDogs">Reservoir Dogs</option>
+          </select> 
+        </form>
+        <br>
+        <form action="#">
+            <label for="movies">Choose Movie</label>
+            <select name="movies" id="movies">
+              <option value="ResevoirDogs">Resevoir Dogs</option>
               <option value="Apocalypto">Apocalypto</option>
               <option value="IT">IT</option>
               <option value="Drive">Drive</option>
               <option value="Anchorman">Anchorman</option>
-            </select>
-                <button type="button" onclick="getSelectedMovie()">Update</button>
-                <br>
-                <br>
+            </select> 
+    
+            <br>
+            <br>
 
-                <form action="#">
-                    <label for="adults">How Many Adults? (Over 18, 0 - 10 tickets)</label>
-                    <select name="adults" id="adults">
+            <form action="#">
+            <label for="adults">How Many Adults? (Over 18; 0 - 10 tickets)</label>
+            <select name="adults" id="adults">
               <option value="a_zero">0</option>
               <option value="a_one">1</option>
               <option value="a_two">2</option>
@@ -79,14 +77,14 @@
               <option value="a_eight">8</option>
               <option value="a_nine">9</option>
               <option value="a_ten">10</option>
-            </select>
-                    <button type="button" onclick="getSelectedAdult()">Update</button>
-                    <br>
-                    <br>
+            </select> 
+        
+            <br>
+            <br>
 
-                    <form action="#">
-                        <label for="children">How Many Children? (Under 18, 0 - 10 tickets)</label>
-                        <select name="children" id="children">
+            <form action="#">
+            <label for="children">How Many Children? (Under 18; 0 - 10 tickets)</label>
+            <select name="children" id="children">
               <option value="c_zero">0</option>
               <option value="c_one">1</option>
               <option value="c_two">2</option>
@@ -98,14 +96,14 @@
               <option value="c_eight">8</option>
               <option value="c_nine">9</option>
               <option value="c_ten">10</option>
-            </select>
-                        <button type="button" onclick="getSelectedKid()">Update</button>
-                        <br>
-                        <br>
+            </select> 
 
-                        <form action="#">
-                            <label for="seniors">How Many Seniors? (Over 65, 0 - 10 tickets)</label>
-                            <select name="seniors" id="seniors">
+            <br>
+            <br>
+
+            <form action="#">
+            <label for="seniors">How Many Seniors? (Over 65; 0 - 10 tickets)</label>
+            <select name="seniors" id="seniors">
               <option value="s_zero">0</option>
               <option value="s_one">1</option>
               <option value="s_two">2</option>
@@ -117,44 +115,18 @@
               <option value="s_eight">8</option>
               <option value="s_nine">9</option>
               <option value="s_ten">10</option>
-            </select>
-                            <button type="button" onclick="getSelectedSr()">Update</button>
-                            <br>
-                            <br>
-
-                            <p></p>
-
+            </select> 
+            <br>
+            <br>
+            <input type="submit" value="Add To Cart">
+        <p></p>
 
 
 
+        
     </body>
-    <br>
-    <br>
-    <table width=60% border="5">
 
-
-        <th>DAY</th>
-        <th>SHOWTIME</th>
-        <th>MOVIE TITLE</th>
-        <th>ADULT(S)</th>
-        <th>CHILDREN</th>
-        <th>SENIOR CITIZEN(S)</th>
-
-
-        <tr>
-            <td id="resultDate">SELECT</td>
-            <td id="resultTime">SELECT</td>
-            <td id="resultMovie">SELECT</td>
-            <td id="resultAdult">SELECT</td>
-            <td id="resultKid">SELECT</td>
-            <td id="resultSr">SELECT</td>
-        </tr>
-    </table>
-    <br>
-    <input type="submit" value="Submit Selection">
-
-
-    <script src="java.js"></script>
+    <script src=""></script>
 
 </body>
 

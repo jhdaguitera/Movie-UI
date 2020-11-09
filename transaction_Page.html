@@ -9,69 +9,50 @@
 </head>
 
 <body>
-
     <body>
-        <h1>WestCoast Dev Theater</h1>
+        <h1 style="font-family:Tahoma">WESTCOAST DEV THEATER</h1>
         <div class="topMenu">
-            <a href="index.html">Home</a>
-            <a href="search_Page.html ">Search Movies</a>
-            <a href="sale_Page.html">Purchase Tickets</a>
-            <!--- <a href="guest_Page.html ">Guest Profile</a> --->
-            <a class="active" href="transaction_Page.html ">Cart</a>
+            <a href="index.html">HOME</a>
+            <a href="search_Page.html ">SEARCH</a>
+            <a href="sale_Page.html">PURCHASE</a>
+            <a class="active" href="transaction_Page.html ">CART</a>
         </div>
         <h2>Checkout</h2>
-        <p>This will auto-populate with the amount of tickets/type of tickets for the showtime selected. <br> We will also have a update/delete button so they can change what is in their cart. The page will ask for <br> the customer information so that an
-            email confirmation can be sent.
+        <p>This will auto-populate with the amount of tickets/type of tickets for the showtime selected. <br>
+            We will also have a update/delete button so they can change what is in their cart. The page will ask for <br>
+            the customer information so that an email confirmation can be sent.      
         </p>
         <br>
-        <h4>
-            <bold>***CUSTOMER TICKET PURCHASE INFORMATION WILL GO HERE***</bold>
-        </h4>
+        <h4><bold>***CUSTOMER TICKET PURCHASE INFORMATION WILL GO HERE***</bold></h4>
         <h4>It will display the movie, time, ticket breakdown and cost. This can change if updated.</h4>
         <form action="#">
             <label for="fname">Adult Tickets</label><input type="text" id="fname" name="fname" value="0">
-            <button type="button" onclick="getInputAdult()">Update</button><input type="submit" value="Delete"><br>
+            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
             <label for="fname">Senior Tickets</label><input type="text" id="fname" name="fname" value="0">
-            <button type="button" onclick="getInputSr()">Update</button><input type="submit" value="Delete"><br>
+            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
             <label for="fname">Children Tickets</label><input type="text" id="fname" name="fname" value="0">
-            <button type="button" onclick="getInputKid()">Update</button><input type="submit" value="Delete"><br>
+            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
 
-        </form>
+          </form>
 
-        <br>
-        <br>
-
-
-        <table width=40% border="5">
-
-            <th>ADULT(S)</th>
-            <th>CHILDREN</th>
-            <th>SENIOR CITIZEN(S)</th>
-
-            <tr>
-                <td id="resultAdult">SELECT</td>
-                <td id="resultKid">SELECT</td>
-                <td id="resultSr">SELECT</td>
-            </tr>
-        </table>
-
-        <br>
-        <br>
+          <br>
+          <br>
 
         <form action="#">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" value=""><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" value=""><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br>
+            <!--<label for="email">Email:</label><br>
+            <input type="text" id="lname" name="lname" value=""> -->
+            <br><br>
 
             <input type="submit" value="Confirm Purchase">
-        </form>
-
-
+          </form>
+          
+        
     </body>
-    <script src="java.js"></script>
+    <script src=""></script>
 
 </body>
 
