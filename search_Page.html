@@ -9,74 +9,100 @@
 </head>
 
 <body>
-    
-        <h1>WestCoast Dev Theater</h1>
-        <div class="topMenu">
-            <a href="index.html">Home</a>
-            <a class="active" href="search_Page.html">Search Movies</a>
-            <a href="sale_Page.html">Purchase Tickets</a>
-            <!--- <a href="guest_Page.html ">Guest Profile</a> --->
-            <a href="transaction_Page.html">Cart</a>
-        </div>
-        <h2>Search Movies</h2>
 
-<p>This will allow the user to search movies by first selecting a day, and then selecting a time OR a currently showing movie. <br> We will also have a carousel of images that will 
-    show the different movies the theater is currently showing. We are hoping to have these <br> fields
-    autopopulate into the checkout menu.  
-    
-</p>
-<h3> - FIRST STEP -</h3>
-<form action="#">
-    <label for="times">Choose what date you want to see a movie!</label>
-    <br>
-    <select name="date" id="date">
-      <option value="monday">Monday</option>
-      <option value="tuesday">Tuesday</option>
-      <option value="wednesday">Wednesday</option>
-      <option value="thursday">Thursday</option>
-      <option value="friday">Friday</option>
-      <option value="saturday">Saturday</option>
-      <option value="sunday">Sunday</option>
-    </select> 
-    <input type="submit" value="Submit">
-    <br>
-    <br>
-    <h3> - SECOND STEP -</h3>
-<form action="#">
-  <label for="times">Choose a time you want to see a movie and we'll show you the showtimes!</label>
-  <br>
-  <select name="times" id="times">
-    <option value="twelve">12:00 PM</option>
-    <option value="two_thirty">2:30 PM</option>
-    <option value="five_thirty">5:30 PM</option>
-    <option value="seven_thirty">7:30 PM</option>
-    <option value="ten_thirty">10:30 PM</option>
-  </select> 
-  <input type="submit" value="Submit">
-  <h5> - OR -</h5>
-</form>
-<form action="#">
-    <label for="movies">Choose a movie and we'll show you the times it's playing!</label>
-    <br>
-    <select name="movies" id="movies">
-      <option value="ResevoirDogs">Resevoir Dogs</option>
-      <option value="Apocalypto">Apocalypto</option>
-      <option value="IT">IT</option>
-      <option value="Drive">Drive</option>
-      <option value="Anchorman">Anchorman</option>
-    </select> 
-    <input type="submit" value="Submit">
+    <h1>WestCoast Dev Theater</h1>
+    <div class="topMenu">
+        <a href="index.html">Home</a>
+        <a class="active" href="search_Page.html">Search Movies</a>
+        <a href="sale_Page.html">Purchase Tickets</a>
+        <!--- <a href="guest_Page.html ">Guest Profile</a> --->
+        <a href="transaction_Page.html">Cart</a>
+    </div>
+    <h2>Search Movies</h2>
 
-<p></p>
+    <p>This will allow the user to search movies by first selecting a day, and then selecting a time OR a currently showing movie. <br> We will also have a carousel of images that will show the different movies the theater is currently showing. We are hoping
+        to have these <br> fields autopopulate into the checkout menu.
 
-        
-        
-         
-        
-    </body>
+    </p>
+    <h3> - FIRST STEP -</h3>
+
+    <form action="#">
+        <label for="times">Choose what date you want to see a movie!</label>
+        <br>
+        <select name="date" id="date">
+        <option value="monday ">Monday</option>
+        <option value="tuesday ">Tuesday</option>
+        <option value="wednesday ">Wednesday</option>
+        <option value="thursday ">Thursday</option>
+        <option value="friday ">Friday</option>
+        <option value="saturday ">Saturday</option>
+        <option value="sunday ">Sunday</option>
+        </select>
+        <button type="button" onclick="getSelectedDate()">Update</button>
+
+        <br>
+        <br>
+        <h3> - SECOND STEP -</h3>
+
+        <form action="# ">
+            <label for="times ">Choose a time you want to see a movie and we'll show you the showtimes!</label>
+            <br>
+            <select name="times" id="times">
+    <option value="twelve ">12:00 PM</option>
+    <option value="two_thirty ">2:30 PM</option>
+    <option value="five_thirty ">5:30 PM</option>
+    <option value="seven_thirty ">7:30 PM</option>
+    <option value="ten_thirty ">10:30 PM</option>
+  </select>
+            <button type="button" onclick="getSelectedTime()">Update</button>
+
+            <h5> - OR -</h5>
+
+        </form>
+        <form action="# ">
+            <label for="movies ">Choose a movie and we'll show you the times it's playing!</label>
+            <br>
+            <select name="movies" id="movies">
+      <option value="ReservoirDogs ">Reservoir Dogs</option>
+      <option value="Apocalypto ">Apocalypto</option>
+      <option value="IT ">IT</option>
+      <option value="Drive ">Drive</option>
+      <option value="Anchorman ">Anchorman</option>
+    </select>
+            <button type="button" onclick="getSelectedMovie()">Update</button>
+
+            <p></p>
+
+            <br>
+            <br>
+
+            <table width=50% border="5 ">
+                <th>DAY</th>
+                <th>SHOWTIME</th>
+                <th>MOVIE TITLE</th>
+                <tr>
+                    <td id="resultDate">SELECT</td>
+                    <td id="resultTime">SELECT</td>
+                    <td id="resultMovie">SELECT</td>
 
 
-    <script src="public_html/cs340/java.js"></script>
+
+
+
+
+
+                </tr>
+
+            </table>
+
+
+
+
+
+
+            <script src="java.js ">
+            </script>
+
 
 </body>
 
