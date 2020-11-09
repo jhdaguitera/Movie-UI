@@ -37,6 +37,7 @@
               <option value="saturday">Saturday</option>
               <option value="sunday">Sunday</option>
             </select>
+            <button type="button" onclick="getSelectedDate()">Update</button>
             <br>
             <br>
             <form action="#">
@@ -48,18 +49,19 @@
             <option value="seven_thirty">7:30 PM</option>
             <option value="ten_thirty">10:30 PM</option>
           </select>
+                <button type="button" onclick="getSelectedTime()">Update</button>
             </form>
             <br>
             <form action="#">
                 <label for="movies">Choose Movie</label>
                 <select name="movies" id="movies">
-              <option value="ResevoirDogs">Resevoir Dogs</option>
+              <option value="ReservoirDogs">Reservoir Dogs</option>
               <option value="Apocalypto">Apocalypto</option>
               <option value="IT">IT</option>
               <option value="Drive">Drive</option>
               <option value="Anchorman">Anchorman</option>
             </select>
-
+                <button type="button" onclick="getSelectedMovie()">Update</button>
                 <br>
                 <br>
 
@@ -78,7 +80,7 @@
               <option value="a_nine">9</option>
               <option value="a_ten">10</option>
             </select>
-
+                    <button type="button" onclick="getSelectedAdult()">Update</button>
                     <br>
                     <br>
 
@@ -97,7 +99,7 @@
               <option value="c_nine">9</option>
               <option value="c_ten">10</option>
             </select>
-
+                        <button type="button" onclick="getSelectedKid()">Update</button>
                         <br>
                         <br>
 
@@ -116,9 +118,10 @@
               <option value="s_nine">9</option>
               <option value="s_ten">10</option>
             </select>
+                            <button type="button" onclick="getSelectedSr()">Update</button>
                             <br>
                             <br>
-                            <input type="submit" value="Submit">
+
                             <p></p>
 
 
@@ -130,7 +133,7 @@
     <table width=60% border="5">
 
 
-        <th>DATE</th>
+        <th>DAY</th>
         <th>SHOWTIME</th>
         <th>MOVIE TITLE</th>
         <th>ADULT(S)</th>
@@ -139,18 +142,19 @@
 
 
         <tr>
-            <td>SELECT</td>
-            <td>SELECT</td>
-            <td>SELECT</td>
-            <td>SELECT</td>
-            <td>SELECT</td>
-            <td>SELECT</td>
+            <td id="resultDate">SELECT</td>
+            <td id="resultTime">SELECT</td>
+            <td id="resultMovie">SELECT</td>
+            <td id="resultAdult">SELECT</td>
+            <td id="resultKid">SELECT</td>
+            <td id="resultSr">SELECT</td>
         </tr>
     </table>
+    <br>
+    <input type="submit" value="Submit Selection">
 
 
-
-    <script src=""></script>
+    <script src="java.js"></script>
 
 </body>
 

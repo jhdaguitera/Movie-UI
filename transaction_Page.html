@@ -30,11 +30,11 @@
         <h4>It will display the movie, time, ticket breakdown and cost. This can change if updated.</h4>
         <form action="#">
             <label for="fname">Adult Tickets</label><input type="text" id="fname" name="fname" value="0">
-            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
+            <button type="button" onclick="getInputAdult()">Update</button><input type="submit" value="Delete"><br>
             <label for="fname">Senior Tickets</label><input type="text" id="fname" name="fname" value="0">
-            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
+            <button type="button" onclick="getInputSr()">Update</button><input type="submit" value="Delete"><br>
             <label for="fname">Children Tickets</label><input type="text" id="fname" name="fname" value="0">
-            <input type="submit" value="Update"><input type="submit" value="Delete"><br>
+            <button type="button" onclick="getInputKid()">Update</button><input type="submit" value="Delete"><br>
 
         </form>
 
@@ -49,10 +49,9 @@
             <th>SENIOR CITIZEN(S)</th>
 
             <tr>
-                <td>SELECT</td>
-                <td>SELECT</td>
-                <td>SELECT</td>
-
+                <td id="resultAdult">SELECT</td>
+                <td id="resultKid">SELECT</td>
+                <td id="resultSr">SELECT</td>
             </tr>
         </table>
 
@@ -72,7 +71,7 @@
 
 
     </body>
-    <script src=""></script>
+    <script src="java.js"></script>
 
 </body>
 
