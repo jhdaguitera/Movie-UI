@@ -1,8 +1,8 @@
 h1 {
     color: white;
-    background-color:black;
+    background-color: black;
     padding: 2%;
-    }
+}
 
 body {
     text-align: center;
@@ -40,7 +40,7 @@ div {
 
 .topMenu a {
     float: center;
-    color:black;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,6 +59,15 @@ div {
 /* Add a color to the active/current link */
 
 .topMenu a.active {
-    background-color:#f1f1f1; 
-    color:black;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+/*Center table*/
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(173, 154, 243);
 }
