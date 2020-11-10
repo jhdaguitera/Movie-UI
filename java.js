@@ -52,6 +52,15 @@ function getSelectedTime() {
     var result = e.options[e.selectedIndex].text;
 
     document.getElementById("resultTime").innerHTML = result;
+    document.getElementById("resultTime1").innerHTML = result;
+    document.getElementById("resultTime2").innerHTML = result;
+    document.getElementById("resultTime3").innerHTML = result;
+    document.getElementById("resultTime4").innerHTML = result;
+    document.getElementById("resultTime5").innerHTML = result;
+    document.getElementById("resultTime6").innerHTML = result;
+    document.getElementById("resultTime7").innerHTML = result;
+    document.getElementById("resultTime8").innerHTML = result;
+    document.getElementById("resultTime9").innerHTML = result;
 }
 
 function getSelectedMovie() {
@@ -59,6 +68,10 @@ function getSelectedMovie() {
     var result = e.options[e.selectedIndex].text;
 
     document.getElementById("resultMovie").innerHTML = result;
+    document.getElementById("resultMovie1").innerHTML = result;
+    document.getElementById("resultMovie2").innerHTML = result;
+    document.getElementById("resultMovie3").innerHTML = result;
+    document.getElementById("resultMovie4").innerHTML = result;
 }
 
 
@@ -83,3 +96,4 @@ function getSelectedSr() {
 
     document.getElementById("resultSr").innerHTML = result;
 }
+
