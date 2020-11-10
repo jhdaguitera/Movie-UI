@@ -83,10 +83,3 @@ function getSelectedSr() {
 
     document.getElementById("resultSr").innerHTML = result;
 }
-
-//adding inputs into Transaction table
-
-function getInputAdult() {
-    var inputVal = document.getElementById("fname").text;
-    alert(inputVal);
-}

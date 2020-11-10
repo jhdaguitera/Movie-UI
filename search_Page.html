@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>WCD</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles2.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>WCD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" style="font-family:Impact" href="index.html">WDT</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">HOME</a></li>
-      <li class="active"><a href="search_Page.html ">SEARCH MOVIES</a></li>
-      <li><a href="sale_Page.html">PURCHASE TICKETS</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-       <li> <button type="button" class="btn btn-default btn-lg">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-family:Impact" href="index.html">WDT</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li class="active"><a href="search_Page.html ">SEARCH MOVIES</a></li>
+                <li><a href="sale_Page.html">PURCHASE TICKETS</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li> <button type="button" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-shopping-cart"></span> <a href="transaction_Page.html">Shopping Cart</a></button>
-          </button>
-          </li>
-    </ul>
-  </div>
-</nav>    
-
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <h2>Search Movies</h2>
 
@@ -68,21 +70,24 @@
 
             <br>
             <br>
-            <div>
-                <table class="center" width=50% border="5">
-                    <th>DAY</th>
-                    <th>SHOWTIME</th>
-                    <th>MOVIE TITLE</th>
-                    <tr>
-                        <td id="resultDate">SELECT</td>
-                        <td id="resultTime">SELECT</td>
-                        <td>data from backend</td>
-                    </tr>
-                </table>
+            <table class="center" width=40% border="5">
+                <th>DAY</th>
+                <th>SHOWTIME</th>
+                <th>MOVIE TITLE</th>
+                <th>SCREEN ROOM #</th>
+                <tr>
+                    <td id="resultDate"><b>-Select-</b></td>
+                    <td id="resultTime"><b>-Select-</b></td>
+                    <td>data from backend</data>
+                    </td>
+                    <td>data from backend</td>
+                </tr>
+            </table>
             </div>
             <br>
             <h5> - OR -</h5>
             <br>
+
         </form>
         <form action="#">
             <label for="movies">Choose a movie and we'll show you the times it's playing!</label>
@@ -97,22 +102,20 @@
             <button type="button" onclick="getSelectedMovie()">Update</button>
             <p></p>
             <br>
-            <table class="center" width=50% border="5">
+            <table class="center" width=40% border="5">
+                <th>MOVIE TITLE</th>
                 <th>DAY</th>
                 <th>SHOWTIME</th>
-                <th>MOVIE TITLE</th>
+                <th>SCREEN ROOM #</th>
+
                 <tr>
+                    <td id="resultMovie"><b>-Select-</b></td>
                     <td>data from backend</td>
                     <td>data from backend</td>
-                    <td id="resultMovie">SELECT</td>
+                    <td>data from backend</td>
                 </tr>
             </table>
-
-
-
-
 </body>
-
 
 <script src="java.js "></script>
 
