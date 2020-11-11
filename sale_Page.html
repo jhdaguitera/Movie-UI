@@ -1,110 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>WCD</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles2.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>WCD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" style="font-family:Impact" href="index.html">WDT</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="search_Page.html ">SEARCH MOVIES</a></li>
-      <li class="active"><a href="sale_Page.html">RESERVE TICKETS</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
- 
-  </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-family:Impact" href="index.html">WDT</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="search_Page.html ">SEARCH MOVIES</a></li>
+                <li class="active"><a href="sale_Page.html">RESERVE TICKETS</a></li>
+                <li><a href="adminPage.html">ADMIN</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
 
-    <ul class="nav navbar-nav navbar-right">
-       <li> <button type="button" class="btn btn-default btn-md">
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li> <button type="button" class="btn btn-default btn-md">
             <span class="glyphicon glyphicon-shopping-cart"></span> <a href="transaction_Page.html">Shopping Cart</a></button>
-          </button>
-          </li>
-    </ul>
-  </div>
-</nav>    
-        
-        
-        <h2>Reserve Your Tickets</h2>
-        <br>
-        <br>
-        <P>This page allows for the ticket selection/reservation table. It will then populate<br>
-        the cart page for the final confirmation step.</P>
-        <br>
-        <br>
-        <h4>YOU'VE CHOOSEN: </h4><h3> "Anchorman" on FRIDAY at 5:30</h3>
-        <br>
-        <br>
-        <div class = "container">
-          <table class="table table-hover" border="3">
-              <thead>
-              <tr>
-              <th>Reservation #</th>  
-              <th>ADULT TICKET</th>
-              <th>CHILDREN TICKET</th>
-              <th>SENIORS TICKET</th>
-              </tr>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h2>Reserve Your Tickets</h2>
+    <br>
+    <br>
+    <P>This page allows for the ticket selection/reservation table. It will then populate<br> the cart page for the final confirmation step.</P>
+    <br>
+    <br>
+    <h4>YOU'VE CHOOSEN: </h4>
+    <h3> "Anchorman" on FRIDAY at 5:30</h3>
+    <br>
+    <br>
+    <div class="container">
+        <table class="table table-hover" border="3">
+            <thead>
+                <tr>
+                    <th>Reservation #</th>
+                    <th>ADULT TICKET</th>
+                    <th>CHILDREN TICKET</th>
+                    <th>SENIORS TICKET</th>
+                </tr>
             </thead>
-              <tr>
-                  <td>12345</td>
-                  <td><input type="text" class="counter" value="0"/></td>
-                  <td><input type="text" class="counter1" value="0"/></td>
-                  <td><input type="text" class="counter2" value="0"/></td>
-                
-              </tr>
-              <tr>
-                  <td></td>
-                  <td><button type="button" class="increment-btn">Insert</button><button type="button" class="decrement-btn">Remove</button></td>
-                  <td><button type="button" class="increment-btn1">Insert</button><button type="button" class="decrement-btn1">Remove</button></td>
-                  <td><button type="button" class="increment-btn2">Insert</button><button type="button" class="decrement-btn2">Remove</button></td>
-              </tr>
-              <tr>
+            <tr>
+                <td>12345</td>
+                <td><input type="text" class="counter" value="0" /></td>
+                <td><input type="text" class="counter1" value="0" /></td>
+                <td><input type="text" class="counter2" value="0" /></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" class="increment-btn">Insert</button><button type="button" class="decrement-btn">Remove</button></td>
+                <td><button type="button" class="increment-btn1">Insert</button><button type="button" class="decrement-btn1">Remove</button></td>
+                <td><button type="button" class="increment-btn2">Insert</button><button type="button" class="decrement-btn2">Remove</button></td>
+            </tr>
+            <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <br>
-            </table>
-        </div>
-            <div class="col-md-4">
-              
-              <button class="btn btn-primary btn-lg btn-block" style="display: block; margin: 0 auto;" type="submit">Add To Cart</button>
-          
-            </div>
+        </table>
+    </div>
+    <div class="col-md-4">
 
-            <p></p>
-            <p></p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <button class="btn btn-primary btn-lg btn-block" style="display: block; margin: 0 auto;" type="submit">Add To Cart</button>
 
-  
+    </div>
+
+    <p></p>
+    <p></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-        
-    </body>
 
-    <script src="clickme.js"></script>
+
+
+</body>
+
+<script src="clickme.js"></script>
 
 </body>
 

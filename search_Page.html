@@ -23,13 +23,14 @@
                 <li><a href="index.html">HOME</a></li>
                 <li class="active"><a href="search_Page.html ">SEARCH MOVIES</a></li>
                 <li><a href="sale_Page.html">RESERVE TICKETS</a></li>
+                <li><a href="adminPage.html">ADMIN</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
-           
+
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -43,14 +44,13 @@
 
     <h2>Search Movies</h2>
 
-    <p>This will allow the user to search movies by time or movie name. The fields will dynamically populate when <br>
-        a selection is made.
+    <p>This will allow the user to search movies by time or movie name. The fields will dynamically populate when <br> a selection is made.
     </p>
     <br>
     <br>
     <form action="#">
-            <label for="times">Choose a time you want to see a movie and we'll show you what's playing this week!</label>
-            <select name="times" id="times">
+        <label for="times">Choose a time you want to see a movie and we'll show you what's playing this week!</label>
+        <select name="times" id="times">
 
     <option value="#">Select One</option>
     <option value="twelve">12:00 PM</option>
@@ -60,27 +60,29 @@
     <option value="ten_thirty">10:30 PM</option>
   </select>
 
-    <div class = "container">
+        <div class="container">
             <button type="button" onclick="getSelectedTime()">Search By Time</button>
             <p></p>
             <br>
             <table class="table table-hover" border="3">
-            <thead>
-                <tr>
-                <th>SHOWTIME</th>
-                <th>MOVIE</th>
-                <th>DAY</th>
-                <th>THEATER</th>
-                <th>SOLD OUT</th>
-                <th>SELECT</th>
-                </tr>
-            </thead>
+                <thead>
+                    <tr>
+                        <th>SHOWTIME</th>
+                        <th>MOVIE</th>
+                        <th>DAY</th>
+                        <th>THEATER</th>
+                        <th>SOLD OUT</th>
+                        <th>SELECT</th>
+                    </tr>
+                </thead>
                 <tr>
                     <td id="resultTime"><b>-Select-</b></td>
                     <td>Resevoir Dogs</td>
                     <td>Friday</td>
                     <td>West Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -88,7 +90,9 @@
                     <td>IT</td>
                     <td>Thursday</td>
                     <td>North Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -96,7 +100,9 @@
                     <td>Anchorman</td>
                     <td>Sunday</td>
                     <td>South Theater</td>
-                    <td><bold>Y</bold></td>
+                    <td>
+                        <bold>Y</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -104,7 +110,9 @@
                     <td>Apocalypto</td>
                     <td>Monday</td>
                     <td>West Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -112,7 +120,9 @@
                     <td>Drive</td>
                     <td>Friday</td>
                     <td>East Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -120,7 +130,9 @@
                     <td>Resevoir Dogs</td>
                     <td>Tuesday</td>
                     <td>North Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -128,7 +140,9 @@
                     <td>Anchorman</td>
                     <td>Thursday</td>
                     <td>West Theater</td>
-                    <td><bold>Y</bold></td>
+                    <td>
+                        <bold>Y</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -136,7 +150,9 @@
                     <td>Drive</td>
                     <td>Wednesday</td>
                     <td>South Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -144,7 +160,9 @@
                     <td>IT</td>
                     <td>Thursday</td>
                     <td>North Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -152,20 +170,22 @@
                     <td>Resevoir Dogs</td>
                     <td>Friday</td>
                     <td>West Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
-            </div>
-            </table>
-            </div>
-            <br>
-            <h5> - OR -</h5>
-            <br>
+        </div>
+        </table>
+        </div>
+        <br>
+        <h5> - OR -</h5>
+        <br>
 
-        </form>
-        <form action="#">
-            <label for="movies">Choose a movie and we'll show you the times it's playing!</label>
-            <select name="movies" id="movies">
+    </form>
+    <form action="#">
+        <label for="movies">Choose a movie and we'll show you the times it's playing!</label>
+        <select name="movies" id="movies">
         
       <option value="#">Select One</option>
       <option value="ReservoirDogs">Reservoir Dogs</option>
@@ -175,27 +195,29 @@
       <option value="Anchorman">Anchorman</option>
     </select>
 
-    <div class = "container">
+        <div class="container">
             <button type="button" onclick="getSelectedMovie()">Search Movie</button>
             <p></p>
             <br>
             <table class="table table-hover" border="3">
                 <thead>
-                <tr>
-                <th>MOVIE</th>
-                <th>SHOWTIME</th>
-                <th>DAY</th>
-                <th>THEATER</th>
-                <th>SOLD OUT</th>
-                <th>SELECT</th>
-                </tr>
-            </thead>
+                    <tr>
+                        <th>MOVIE</th>
+                        <th>SHOWTIME</th>
+                        <th>DAY</th>
+                        <th>THEATER</th>
+                        <th>SOLD OUT</th>
+                        <th>SELECT</th>
+                    </tr>
+                </thead>
                 <tr>
                     <td id="resultMovie"><b>-Select-</b></td>
                     <td>5:30</td>
                     <td>Friday</td>
                     <td>North Theater</td>
-                    <td><bold>Y</bold></td>
+                    <td>
+                        <bold>Y</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -203,7 +225,9 @@
                     <td>6:30</td>
                     <td>Saturday</td>
                     <td>North Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -211,7 +235,9 @@
                     <td>10:30</td>
                     <td>Thursday</td>
                     <td>North Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -219,7 +245,9 @@
                     <td>3:30</td>
                     <td>Friday</td>
                     <td>South Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <tr>
@@ -227,17 +255,20 @@
                     <td>9:30</td>
                     <td>Monday</td>
                     <td>West Theater</td>
-                    <td><bold>N</bold></td>
+                    <td>
+                        <bold>N</bold>
+                    </td>
                     <td> <button type="button" onclick="getSelectedTimeee()">Select Movie</button></td>
                 </tr>
                 <p></p>
                 <p></p>
-            </div>
+        </div>
 
-            
-              
-      </body>
-      </html>
+
+
+</body>
+
+</html>
 
 
 

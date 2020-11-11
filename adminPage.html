@@ -1,0 +1,109 @@
+<!--CODE TAKEN FROM https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_filters_table&stacked=h -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>ADMIN PAGE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Administrator Level</h2>
+
+        <input class="form-control" id="myInput" type="text" placeholder="Search for customer info via FIRST NAME, LAST NAME, or EMAIL">
+
+        <br>
+        <table id="myTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>MOVIE</th>
+                    <th>DAY</th>
+                    <th>SHOWTIME</th>
+                    <th>SCREEN</th>
+                    <th># ADULTS</th>
+                    <th># CHILDREN</th>
+                    <th># SENIORS</th>
+                    <td><b>SOLD OUT</b></td>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@gmail.com</td>
+                    <td>IT</td>
+                    <td>Monday</td>
+                    <td>2:30 PM</td>
+                    <td>North</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Issac</td>
+                    <td>Bachicha</td>
+                    <td>isaac@gmail.com</td>
+                    <td>Reservoir Dogs</td>
+                    <td>Wednesday</td>
+                    <td>5:00 PM</td>
+                    <td>East</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Jason</td>
+                    <td>Daguitera</td>
+                    <td>jason@gmail.com</td>
+                    <td>Drive</td>
+                    <td>Friday</td>
+                    <td>12:00 PM</td>
+                    <td>East</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>1</td>
+                    <td>Y</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <button onclick="myCreateFunction()">Create row</button>
+        <button onclick="myDeleteFunction()">Delete row</button>
+
+
+        <p>*actual data retrieved from database...admin can insert new items in UI table which is added to SQL server</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+
+    <script src="java.js "></script>
+
+</body>
+
+</html>

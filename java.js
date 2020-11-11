@@ -97,3 +97,24 @@ function getSelectedSr() {
     document.getElementById("resultSr").innerHTML = result;
 }
 
+
+
+//from bootstrap table filter
+
+$(document).ready(function() {
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+
+
+//delete last row of filter table on admin page
+
+function myDeleteFunction() {
+    document.getElementById("myTable").deleteRow(length - 1);
+
+
+}

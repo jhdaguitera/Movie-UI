@@ -73,3 +73,14 @@ body {
 .bs-example {
     margin: 20px;
 }
+
+.skin-light .login-form,
+.skin-light .logout-form {
+    max-width: 30rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.skin-light .logout-form {
+    display: none;
+}
