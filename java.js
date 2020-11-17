@@ -118,3 +118,9 @@ function myDeleteFunction() {
 
 
 }
+
+function myCreateFunction() {
+    document.getElementById("myTable").insertRow(length + 1);
+
+
+}

@@ -33,132 +33,74 @@
             </ul>
         </div>
     </nav>
-
-    <!--Main layout-->
-    <main class="mt-5 pt-4">
-        <div class="container wow fadeIn">
-
-            <!-- Heading -->
-            <h2 class="my-5 h2 text-center">CHECKOUT FORM</h2>
+    <h1>CHECKOUT</h1>
+    <BR>
+    <br>
+    <br>
+    <div class="container">
+        <table class="table table-hover" border="3">
+            <thead>
+                <tr>
+                    <th>RESERVATION</th>
+                    <th>MOVIE</th>
+                    <th>ADULT TICKET(S)</th>
+                    <th>CHILD TICKET(S)</th>
+                    <th>SENIOR TICKET(S)</th>
+                    <th>SHOWTIME</th>
+                    <th>DAY</th>
+                    <th>THEATER</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>2</td>
+                <td>Anchorman</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>5:30</td>
+                <td>Friday</td>
+                <td>WEST</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>    
+        </table>
+        <button type="button" class="increment-btn1" style="float: right;">Delete Reservation</button>
+        <button type="button" class="increment-btn2" style="float: right;">Update Reservation</button> 
+        <br>
+    </div>
+    <h3>ENTER NAME & EMAIL TO CONFIRM</h3>
+    <div class="container">
+        <table class="table table-hover" border="3">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                
+                </tr>
+            </thead>
+            <tr>
+                <td><input type="text" class="form-control" placeholder="First & Last"/></td>
+                <td><input type="text" class="form-control" placeholder="youremail@example.com" /></td>  
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
             <br>
+        </table>
+        <td><button type="button" class="md-form mb-5" style="float: right;" >CONFIRM RESERVATION</button></td>
+    </div>
 
+    
 
-            <div class="row">
-                <div class="column">
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-7">
-
-                        <!-- Heading -->
-                        <h4 class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="text-muted">Your cart For ANCHORMAN on Friday at 5:30</span>
-                        </h4>
-
-                        <!-- Cart -->
-                        <ul class="list-group mb-3 z-depth-1">
-                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 class="my-0">Adult Tickets</h6>
-                                    <small class="text-muted" style="color:red">5 Tickets    </small><button type="button small-btn"> Change</style></button>
-                                </div>
-
-
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 class="my-0">Child Tickets</h6>
-                                    <small class="text-muted" style="color:red">10 Tickets    </small><button type="button small-btn"> Change</style></button>
-                                </div>
-
-
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 class="my-0">Senior tickets</h6>
-                                    <small class="text-muted" style="color:red">4 Tickets    </small><button type="button small-btn"> Change</style></button>
-                                </div>
-
-
-                            </li>
-                            <!--<li class="list-group-item d-flex justify-content-between bg-light">
-                <div class="text-success">
-                  <h6 class="my-0">Promo code</h6>
-                  <small>EXAMPLECODE</small>
-                </div>
-                <span class="text-success">-$5</span>
-              </li>-->
-                            <li class="list-group-item d-flex justify-content-between">
-                                <span>Total Tickets</span>
-                                <strong style="color:red">19</strong>
-                            </li>
-                        </ul>
-                        <!-- Cart -->
-
-                        <!--
-            <form class="card p-2">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary btn-md waves-effect m-0" type="button">Redeem</button>
-                </div>
-              </div>
-            </form>
-            Promo code-->
-
-                    </div>
-
-
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-2">
-                        <h4 class="my-5 h2 text-center">Customer Details</h4>
-
-                        <!--firstName-->
-                        <div class="md-form ">
-                            <br>
-                            <br>
-                            <input type="text" id="firstName" class="form-control">
-                            <label for="firstName" class="">First name</label>
-                        </div>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-2">
-
-                        <!--lastName-->
-                        <div class="md-form">
-                            <input type="text" id="lastName" class="form-control">
-                            <label for="lastName" class="">Last name</label>
-                        </div>
-
-
-
-
-                        <!--email-->
-                        <div class="md-form mb-5">
-                            <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
-                            <label for="email" class="">Email </label>
-                        </div>
-
-                        <hr class="col-md-4 mb-2">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Confirm Tickets</button>
-
-                        </form>
-                    </div>
-
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-
-
-    </main>
-    <!--Main layout-->
 
 </body>
 <script src=""></script>
