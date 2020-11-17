@@ -1,6 +1,29 @@
 <!--CODE TAKEN FROM https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_filters_table&stacked=h -->
 <!DOCTYPE html>
 
+<head>
+    <title>WCD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-family:Impact" href="#">WDT</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </nav>
+
 <html lang="en">
 
 <head>
@@ -14,31 +37,38 @@
 
 </head>
 
-<body>
+
 
     <div class="container">
-        <h2>Administrator Level</h2>
-
-        <input class="form-control" id="myInput" type="text" placeholder="Search for customer info via NAME, or EMAIL">
-
+        <h1>Administrator Level</h1>
+        <br>
+        <p>*actual data retrieved from database...admin can insert new items in UI table which is added to SQL server</p>
+        <br>
+       
+        <h2>Current Reservations</h2>
+        <input class="form-control" id="myInput" type="text" placeholder="Search reservations for customer info via NAME, or EMAIL">
         <br>
         <table id="myTable" class="table table-bordered table-striped">
             <thead>
                 <tr>
+                    <th></th>
+                    <th>#</th>
                     <th>NAME</th>
                     <th>EMAIL</th>
                     <th>MOVIE</th>
                     <th>DAY</th>
                     <th>SHOWTIME</th>
                     <th>SCREEN</th>
-                    <th># ADULTS</th>
-                    <th># CHILDREN</th>
-                    <th># SENIORS</th>
+                    <th>ADULTS</th>
+                    <th>CHILDREN</th>
+                    <th>SENIORS</th>
                     <td><b>SOLD OUT</b></td>
                 </tr>
             </thead>
             <tbody id="myTable">
                 <tr>
+                    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+                    <td>1</td>
                     <td>John Doe</td>
                     <td>john@gmail.com</td>
                     <td>IT</td>
@@ -51,6 +81,8 @@
                     <td>N</td>
                 </tr>
                 <tr>
+                    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+                    <td>2</td>
                     <td>Isaac B.</td>
                     <td>isaac@gmail.com</td>
                     <td>Reservoir Dogs</td>
@@ -63,6 +95,8 @@
                     <td>N</td>
                 </tr>
                 <tr>
+                    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+                    <td>3</td>
                     <td>Jason D.</td>
                     <td>jason@gmail.com</td>
                     <td>Drive</td>
@@ -78,13 +112,190 @@
             </tbody>
 
         </table>
+        <p align="right">
+            <button onclick="myDeleteFunction()">Delete Checked Row</button>
+        </p>
+        <h5>Add Reservation:</h5>
+        <table id="myTable" class="table table-bordered table-striped">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input class="form-control mr-sm-2" type="text" placeholder="First/Last" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="Title" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="Day" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="Showtime" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="Screen" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="#" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="#" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="#" aria-label="Search"> </td>
+                    <td><input class="form-control mr-sm-2" type="search" placeholder="Y/N" aria-label="Search"> </td>
+                </tr>
 
-        <button onclick="myCreateFunction()">Create row</button>
-        <button onclick="myDeleteFunction()">Delete row</button>
+            </tbody>
 
+        </table>
+        <p align="right">
+        <button onclick="myCreateFunction()">Create Reservation</button>
+        </p>
+        <br>
+        <br>
+    
+    <br>
+        <h2>Add/Remove Theater From Database</h2>
+        <table id="addTheater" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ENTER SCREEN NAME TO ADD:</th>
+                    <th>
+                    <form>
+                        <input type = "text" id="screenName" name="screenName">
+                    </form>
+                    </th>
+                    <th><button onclick="myCreateFunction()">Add Theater</button></th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>ENTER SCREEN NAME TO REMOVE:</th>
+                    <th>
+                    <form>
+                        <input type = "text" id="screenName" name="screenName">
+                    </form>
+                    </th>
+                    <th><button onclick="myCreateFunction()">Remove Theater</button></th>
+                </tr>
+            </thead>
+        </table>
 
-        <p>*actual data retrieved from database...admin can insert new items in UI table which is added to SQL server</p>
+        
+        <br>
+        <br>
+        <h2>Add/Remove Movie From Database</h2>
+        <h5>To Add:</h5>
+        <table id="addMovie" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color:#9b9797">TITLE</th>
+                    <th style="background-color:#9b9797">GENRE</th>
+                    <th style="background-color:#9b9797">RATING</th>
+                    <th style="background-color:#9b9797"></th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>
+                    <form>
+                        <input type = "text" id="screenName" name="screenName">
+                    </form>
+                    </th>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th><button onclick="myCreateFunction()">Add Movie</button></th>
+                </tr>
+            </thead>
+        </table>
+        <h5>To Remove:</h5>
+        <table id="removeMovie" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ENTER MOVIE NAME:</th>
+                    <th>
+                    <form>
+                        <input type = "text" id="screenName" name="screenName">
+                    </form>
+                    </th>
+                    <th><button onclick="myCreateFunction()">Remove Movie</button></th>
+                </tr>
+            </thead>
+        </table>
+
+        <br>
+        <br>
+        <h2>Add/Remove Showtime From Database</h2>
+        <h5>To Add:</h5>
+        <table id="addShowtime" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color:#9b9797">TITLE</th>
+                    <th style="background-color:#9b9797">START TIME</th>
+                    <th style="background-color:#9b9797">DAY</th>
+                    <th style="background-color:#9b9797">SEATS AVAILABLE</th>
+                    <th style="background-color:#9b9797"></th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>
+                    <form>
+                        <input type = "text" id="screenName" name="screenName">
+                    </form>
+                    </th>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th>Y</th>
+                    <th>
+                        <button onclick="myCreateFunction()">Add Movie</button>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h5>To Remove:</h5>
+        <table id="removeShowtime" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color:#9b9797">TITLE</th>
+                    <th style="background-color:#9b9797">START TIME</th>
+                    <th style="background-color:#9b9797">DAY</th>
+                    <th style="background-color:#9b9797"></th>
+                </tr>
+                <tr>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th>
+                        <form>
+                            <input type = "text" id="screenName" name="screenName">
+                        </form>
+                    </th>
+                    <th>
+                        <button onclick="myCreateFunction()">Remove Showtime</button>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
 
     <script>
         $(document).ready(function() {
